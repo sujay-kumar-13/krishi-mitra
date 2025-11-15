@@ -12,7 +12,7 @@
 
 ## 🔽 Download APK(for android)
 
-- 👉 [Krishi Mitra](https://github.com/sujay-kumar-13/krishi-mitra/raw/refs/heads/master/build/app/outputs/flutter-apk/app-release.apk)
+- 👉 [Krishi Mitra](https://github.com/sujay-kumar-13/krishi-mitra/raw/refs/heads/master/flutter/build/app/outputs/flutter-apk/app-release.apk)
 
 ---
 

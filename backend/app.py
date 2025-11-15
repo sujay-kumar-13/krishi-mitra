@@ -528,11 +528,11 @@ def detect_disease():
                 "temperature": 0.2,
                 "topK": 10,
                 "topP": 0.95,
-                "maxOutputTokens": 2048
+                "maxOutputTokens": 512
             }
         }
 
-        response = requests.post(url, headers=headers, json=payload)
+        response = requests.post(url, headers=headers, json=payload, timeout=15)
         return jsonify(response.json()), response.status_code
 
     except Exception as e:
@@ -588,11 +588,11 @@ def fert_calculator():
                 "temperature": 0.2,
                 "topK": 10,
                 "topP": 0.95,
-                "maxOutputTokens": 2048
+                "maxOutputTokens": 512
             }
         }
 
-        response = requests.post(url, headers=headers, json=payload)
+        response = requests.post(url, headers=headers, json=payload, timeout=15)
         gen = response.json()
         raw_text = gen['candidates'][0]['content']['parts'][0]['text']
 
